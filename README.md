@@ -1,56 +1,33 @@
-# ART CLUB — THPT Bảo Lộc
+# Chaos Typography Generator
 
-Website giới thiệu CLB Nghệ thuật, tối ưu cho PC / tablet / mobile.
+A single-page typography generator designed for fast-changing "newspaper / ransom-note / magazine / comic / punk / glitch" text effects.
 
-## Cấu trúc
+## Features
 
-- `index.html` — nội dung website
-- `style.css` — giao diện và responsive
-- `script.js` — menu, gallery, filter, lightbox
-- `assets/logo.jpg` — logo CLB
-- `gallery/` — nơi lưu tranh / ảnh
+- Random style per character while keeping the text readable
+- Mixed themes: newspaper, magazine pop, retro, comic, punk/zine, marker, editorial/luxury, digital/glitch
+- Adjustable speed, font size, chaos, color intensity and letter spacing
+- Chroma-key background color picker for easy compositing in CapCut/Premiere/DaVinci Resolve
+- Freeze, shuffle, fullscreen, and hide-controls shortcuts
+- Runs entirely in the browser; no build step and no external dependencies
 
-## Đăng website bằng GitHub Pages
+## Run locally
 
-1. Tạo repository trên GitHub và để `Public`.
-2. Upload toàn bộ các file/thư mục trong project.
-3. Vào `Settings` → `Pages`.
-4. Chọn `Deploy from a branch`.
-5. Branch: `main`, Folder: `/ (root)`.
-6. Save và chờ GitHub Pages triển khai.
+Open `index.html` in a modern browser.
 
-## Thêm tác phẩm
+## Publish with GitHub Pages
 
-1. Upload ảnh vào đúng thư mục:
-   - `gallery/paintings/`
-   - `gallery/digital-art/`
-   - `gallery/photography/`
-   - `gallery/events/`
-2. Mở `script.js`.
-3. Tìm `const artworks = [`.
-4. Thêm một object, ví dụ:
+1. Create a new GitHub repository.
+2. Upload all files from this folder to the repository root.
+3. Open **Settings -> Pages**.
+4. Under **Build and deployment**, choose **Deploy from a branch**.
+5. Select branch **main** and folder **/(root)**, then save.
+6. Wait for GitHub Pages to publish the site.
 
-{
-  image: "gallery/paintings/tranh-01.jpg",
-  category: "paintings",
-  title: "Mùa hạ",
-  author: "Nguyễn A",
-  description: "Acrylic • 2026"
-}
+## Controls
 
-5. Commit changes.
+- `Space`: Play / Freeze
+- `S`: Shuffle immediately
+- `H`: Hide / show controls
 
-## Thêm Spotify
-
-Trong `index.html`, tìm phần `spotify-placeholder`.
-Lấy mã Embed từ Spotify rồi thay placeholder bằng iframe Spotify.
-
-## Đổi link tuyển thành viên
-
-Trong `index.html`, tìm nút `Đăng ký tham gia` và thay `href="#"` bằng link Google Form.
-
-## Thông tin liên hệ đã cài
-
-- Trường THPT Bảo Lộc — Cơ sở 1
-- artclub287@gmail.com
-- Facebook: https://www.facebook.com/share/19B7YQZiLG/?mibextid=wwXIfr
+Recommended for a fast cut-paper look: speed 60-90 ms, chaos 65-80%, colorfulness 80-100%, theme `MIXED`.
